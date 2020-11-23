@@ -1,0 +1,13 @@
+{
+  "anonymous": {
+    "title": "所有人"
+  },
+  "logined_user": {
+    "title": "登录用户",
+    "flow": ""
+  },
+  "admin": {
+    "title": "管理员",
+    "flow": ""
+  }
+}

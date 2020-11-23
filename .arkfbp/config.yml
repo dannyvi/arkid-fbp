@@ -1,0 +1,7 @@
+arkfbpCliVersion: 0.0.3-rc
+arkfbpSpecVersion: 0.0.3.dev0
+created: 2020-11-23 11:47:19
+language: Python
+name: server
+type: Server
+framework: Django
