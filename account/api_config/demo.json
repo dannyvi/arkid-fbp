@@ -60,7 +60,8 @@
           "password": {
             "src": "model_user.password"
           },
-          "nickname": "model_user.nickname"
+          "nickname": "model_user.nickname",
+          "group_name": "model_group.name"
         },
         "response": {
           "user": "user",
@@ -68,6 +69,7 @@
         },
         "debug": false,
         "permission": [
+          "role.admin"
         ]
       },
       "get": {
@@ -87,6 +89,7 @@
         },
         "debug": false,
         "permission": [
+          "role.admin"
         ]
       }
     },

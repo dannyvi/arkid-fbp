@@ -8,6 +8,6 @@
   },
   "admin": {
     "title": "管理员",
-    "flow": ""
+    "flow": "account.flows.admin"
   }
 }
