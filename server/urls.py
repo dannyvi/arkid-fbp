@@ -15,7 +15,7 @@ Including another URLconf
 """
 import os
 
-from arkfbp.common.django.app.automation.flows.core import MetaConfigs
+from arkfbp.common.django.app.automation.flows.drf_core import MetaConfigs
 from django.contrib import admin
 from django.urls import path, include
 
