@@ -16,14 +16,16 @@ Including another URLconf
 import os
 
 from common.django.drf.meta_config import MetaConfigs
+#from common.django.app.automation.flows.core import MetaConfigs
 from django.contrib import admin
 from django.urls import path, include
 
 
-file_dir = os.path.join(os.getcwd(), 'account/api_config')
+# file_dir = os.path.join(os.getcwd(), 'account/api_config')
+apps = ['account']
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('arkfbp-admin/', include(MetaConfigs(file_dir=file_dir).get_urls()))
+    path('arkfbp-admin/', include(MetaConfigs(apps=apps).get_urls()))
 
 ]
