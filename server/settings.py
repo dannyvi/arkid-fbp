@@ -121,6 +121,35 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    ],
+    #'DEFAULT_PAGINATION_CLASS': 'presets.pagination.Pagination',
+    #'PAGE_SIZE': 10,
+    'DEFAULT_RENDERER_CLASSES': (
+        #'presets.renderers.JsonRenderer',
+        'rest_framework.renderers.JSONRenderer',
+        #'rest_framework.renderers.TemplateHTMLRenderer',
+    ),
+    'DEFAULT_PARSER_CLASSES': (
+        'rest_framework.parsers.FormParser',
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.MultiPartParser',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        #'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    #'DEFAULT_FILTER_BACKENDS': (
+        #'presets.backends.DjangoFilterBackend',
+        #'presets.backends.FlexFieldsFilterBackend',
+    #),
+    #'EXCEPTION_HANDLER': 'rest_framework.views.exception_handler',
+    #'EXCEPTION_HANDLER': 'presets.exc_handler.exception_handler',
+}
+
 # ArkFBP
 
 ARKFBP_CONF = 'server'
