@@ -1,0 +1,18 @@
+{
+  "models": [
+    {
+      "className": "Group",
+      "fields": [
+        {
+          "name": "name",
+          "field": "CharField",
+          "properties": {
+            "verbose_name": "组名",
+            "max_length": 128,
+            "unique": true
+          }
+        }
+      ]
+    }
+  ]
+}
